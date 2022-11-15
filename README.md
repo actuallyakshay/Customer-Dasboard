@@ -12,7 +12,7 @@ This is the admin Panel Dashboard where admin can add the user in database, dele
 #### Disclaimer !! ( Sorry for the inconvenience ! I have not deployed the backend server on (Heroku, cyclic.sh, render etc.)  plateforms coz I have finished all the free limits of backend deployment ) [ Anyone can use 8080 port to run the backend for this website]
 Admin Panel Dashboard  vercel link : https://dashboard-one-phi.vercel.app/
 </br>
-
+#### ⌚ Duration :- 3 hrs
 </br>
 
 ## Some glimpse of user-Interface
