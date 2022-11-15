@@ -10,6 +10,7 @@ import {
   TableCaption,
   TableContainer,
   Button,
+  Heading,
 } from "@chakra-ui/react";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -24,7 +25,7 @@ function Users() {
   const dispatch = useDispatch();
 
   const data = useSelector((state) => state?.user?.data);
-  console.log({ data });
+  const isLoading = useSelector((state) => state.user?.isLoading);
 
   useEffect(() => {
     dispatch(getUser());
@@ -37,7 +38,9 @@ function Users() {
     });
   };
 
-  return (
+  return isLoading ? (
+    <Heading>.......Loading</Heading>
+  ) : (
     <>
       <TableContainer>
         <Table variant="striped" colorScheme="gray">
